@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
 
 @Component({
   selector: 'app-all-items',
@@ -7,18 +7,21 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AllItemsComponent implements OnInit {
 
-  constructor() { }
+  clickDetailsItems: persons;
 
+  constructor() { }
   ngOnInit(): void {
   }
 
   deliteById(id){
     let index = this.allPersons.findIndex(_p => _p.id == id)
     this.allPersons.splice(index, 1);
-  }
+  };
+
+  
 
   allPersons:persons[] = [
-    { id:1, name:'shuki', height:5.55, color:'blue', successful:false },
+    { id:1, name:'shlomo', height:5.55, color:'blue', successful:false },
     { id:2, name:'iosy', height:15.55, color:'red', successful:true },
     { id:3, name:'beny', height:53.55, color:'brown', successful:false },
     { id:4, name:'asher', height:5.55, color:'violet', successful:false },

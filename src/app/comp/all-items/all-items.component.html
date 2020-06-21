@@ -1,3 +1,11 @@
-<app-item *ngFor='let per of allPersons' [person]='per'
+<div class="contaner">
+    <div class="items" >
+<app-item *ngFor='let per of allPersons'
+[person]='per'
 (del)='deliteById($event)'
+(details)='clickDetailsItems=$event'
 ></app-item>
+</div>
+
+<app-details *ngIf='clickDetailsItems' [perDetails]='clickDetailsItems'></app-details>
+</div>

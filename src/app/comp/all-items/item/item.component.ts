@@ -13,12 +13,17 @@ export class ItemComponent implements OnInit {
   @Input() person : persons;
 
   @Output() del : EventEmitter<number>=new EventEmitter<number>();
+  @Output() details : EventEmitter<persons>=new EventEmitter<persons>();
 
   ngOnInit(): void {
   }
 
   delite(){
     this.del.emit(this.person.id)
+  }
+
+  clickDetailsIt(){ 
+    this.details.emit(this.person)
   }
 
 }

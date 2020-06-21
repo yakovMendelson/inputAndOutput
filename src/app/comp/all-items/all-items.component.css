@@ -1,0 +1,8 @@
+.items{
+    display: flex;
+    flex-direction: column;
+}
+.contaner{
+    display: flex;
+    flex-direction: row;
+}
