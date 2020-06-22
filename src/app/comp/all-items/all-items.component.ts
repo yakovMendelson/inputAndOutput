@@ -17,6 +17,9 @@ export class AllItemsComponent implements OnInit {
     let index = this.allPersons.findIndex(_p => _p.id == id)
     this.allPersons.splice(index, 1);
   };
+  addPerson(per){
+    this.allPersons.push(per);
+  }
 
   
 

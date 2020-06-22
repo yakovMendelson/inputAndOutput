@@ -6,3 +6,6 @@
     display: flex;
     flex-direction: row;
 }
+.addPerson{
+    padding: 20px;
+}

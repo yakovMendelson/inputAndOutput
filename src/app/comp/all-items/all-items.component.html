@@ -6,6 +6,11 @@
 (details)='clickDetailsItems=$event'
 ></app-item>
 </div>
+<app-add-item class="addPerson"
+(personAdd)='addPerson($event)'></app-add-item>
+
 
 <app-details *ngIf='clickDetailsItems' [perDetails]='clickDetailsItems'></app-details>
+
+
 </div>
