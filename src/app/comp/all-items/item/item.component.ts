@@ -7,7 +7,7 @@ import { persons } from '../all-items.component';
   styleUrls: ['./item.component.css']
 })
 export class ItemComponent implements OnInit {
-
+  message:string='hhhhhhhh'
   constructor() { }
 
   @Input() person : persons;
@@ -24,6 +24,10 @@ export class ItemComponent implements OnInit {
 
   clickDetailsIt(){ 
     this.details.emit(this.person)
+  }
+  public myFunc() {
+    if(window.confirm('Are sure you want to delete this item ?'))
+    this.delite()
   }
 
 }
