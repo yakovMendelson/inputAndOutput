@@ -21,13 +21,14 @@ export class AddItemComponent implements OnInit {
   this.winForm.nativeElement.style.display='grid'
  }
  finished(name,height,successful,id){
+  if(confirm('Are sure you want to add this item ?')){
    this.person=new persons;
    this.person.id=id.value;
    this.person.name=name.value;
    this.person.height=height.value;
    this.person.successful=successful.value;
    this.personAdd.emit(this.person);
-   
+  }
 
       this.add.nativeElement.style.display='grid'
       this.winForm.nativeElement.style.display='none'
