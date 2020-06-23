@@ -22,11 +22,13 @@ export class AddItemComponent implements OnInit {
  }
  finished(name,height,successful,id){
   if(confirm('Are sure you want to add this item ?')){
+  let color='#'+Math.random().toString(16).substr(-6);
    this.person=new persons;
    this.person.id=id.value;
    this.person.name=name.value;
    this.person.height=height.value;
    this.person.successful=successful.value;
+   this.person.color=color;
    this.personAdd.emit(this.person);
   }
 

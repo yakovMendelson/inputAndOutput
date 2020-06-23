@@ -271,11 +271,13 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
         key: "finished",
         value: function finished(name, height, successful, id) {
           if (confirm('Are sure you want to add this item ?')) {
+            var color = '#' + Math.random().toString(16).substr(-6);
             this.person = new _all_items_component__WEBPACK_IMPORTED_MODULE_1__["persons"]();
             this.person.id = id.value;
             this.person.name = name.value;
             this.person.height = height.value;
             this.person.successful = successful.value;
+            this.person.color = color;
             this.personAdd.emit(this.person);
           }
 
