@@ -1,4 +1,5 @@
 import { Component, OnInit, ElementRef, ViewChild, Output, EventEmitter } from '@angular/core';
+import { ServiesService } from 'src/app/servies.service';
 import { persons } from '../all-items.component';
 
 @Component({
@@ -12,9 +13,10 @@ export class AddItemComponent implements OnInit {
   person :persons;
   
   @Output() personAdd :EventEmitter<persons> = new EventEmitter<persons>()
-  constructor() { }
+  constructor(private  http:ServiesService) { }
 
   ngOnInit(): void {
+    this.http.post()
   }
   addPerson(){
   this.add.nativeElement.style.display='none'

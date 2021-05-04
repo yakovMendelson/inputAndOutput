@@ -71,12 +71,14 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/__ivy_ngcc__/fesm2015/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
-/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
-/* harmony import */ var _comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./comp/all-items/all-items.component */ "./src/app/comp/all-items/all-items.component.ts");
-/* harmony import */ var _comp_all_items_item_item_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./comp/all-items/item/item.component */ "./src/app/comp/all-items/item/item.component.ts");
-/* harmony import */ var _comp_all_items_details_details_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./comp/all-items/details/details.component */ "./src/app/comp/all-items/details/details.component.ts");
-/* harmony import */ var _comp_all_items_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./comp/all-items/add-item/add-item.component */ "./src/app/comp/all-items/add-item/add-item.component.ts");
-/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+/* harmony import */ var _app_component__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./app.component */ "./src/app/app.component.ts");
+/* harmony import */ var _comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! ./comp/all-items/all-items.component */ "./src/app/comp/all-items/all-items.component.ts");
+/* harmony import */ var _comp_all_items_item_item_component__WEBPACK_IMPORTED_MODULE_5__ = __webpack_require__(/*! ./comp/all-items/item/item.component */ "./src/app/comp/all-items/item/item.component.ts");
+/* harmony import */ var _comp_all_items_details_details_component__WEBPACK_IMPORTED_MODULE_6__ = __webpack_require__(/*! ./comp/all-items/details/details.component */ "./src/app/comp/all-items/details/details.component.ts");
+/* harmony import */ var _comp_all_items_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_7__ = __webpack_require__(/*! ./comp/all-items/add-item/add-item.component */ "./src/app/comp/all-items/add-item/add-item.component.ts");
+/* harmony import */ var _angular_common__WEBPACK_IMPORTED_MODULE_8__ = __webpack_require__(/*! @angular/common */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/common.js");
+
 
 
 
@@ -88,37 +90,40 @@ __webpack_require__.r(__webpack_exports__);
 
 class AppModule {
 }
-AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]] });
+AppModule.ɵmod = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineNgModule"]({ type: AppModule, bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]] });
 AppModule.ɵinj = _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵdefineInjector"]({ factory: function AppModule_Factory(t) { return new (t || AppModule)(); }, providers: [], imports: [[
-            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
+            _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+            _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]
         ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-        _comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_3__["AllItemsComponent"],
-        _comp_all_items_item_item_component__WEBPACK_IMPORTED_MODULE_4__["ItemComponent"],
-        _comp_all_items_details_details_component__WEBPACK_IMPORTED_MODULE_5__["DetailsComponent"],
-        _comp_all_items_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_6__["AddItemComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]] }); })();
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetNgModuleScope"](AppModule, { declarations: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+        _comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_4__["AllItemsComponent"],
+        _comp_all_items_item_item_component__WEBPACK_IMPORTED_MODULE_5__["ItemComponent"],
+        _comp_all_items_details_details_component__WEBPACK_IMPORTED_MODULE_6__["DetailsComponent"],
+        _comp_all_items_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_7__["AddItemComponent"]], imports: [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+        _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]] }); })();
 /*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵsetClassMetadata"](AppModule, [{
         type: _angular_core__WEBPACK_IMPORTED_MODULE_1__["NgModule"],
         args: [{
                 declarations: [
-                    _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-                    _comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_3__["AllItemsComponent"],
-                    _comp_all_items_item_item_component__WEBPACK_IMPORTED_MODULE_4__["ItemComponent"],
-                    _comp_all_items_details_details_component__WEBPACK_IMPORTED_MODULE_5__["DetailsComponent"],
-                    _comp_all_items_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_6__["AddItemComponent"]
+                    _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+                    _comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_4__["AllItemsComponent"],
+                    _comp_all_items_item_item_component__WEBPACK_IMPORTED_MODULE_5__["ItemComponent"],
+                    _comp_all_items_details_details_component__WEBPACK_IMPORTED_MODULE_6__["DetailsComponent"],
+                    _comp_all_items_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_7__["AddItemComponent"]
                 ],
                 imports: [
-                    _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"]
+                    _angular_platform_browser__WEBPACK_IMPORTED_MODULE_0__["BrowserModule"],
+                    _angular_common_http__WEBPACK_IMPORTED_MODULE_2__["HttpClientModule"]
                 ],
                 providers: [],
-                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"]]
+                bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"]]
             }]
     }], null, null); })();
-_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetComponentScope"](_comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_3__["AllItemsComponent"], [_angular_common__WEBPACK_IMPORTED_MODULE_7__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgComponentOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgSwitchCase"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgSwitchDefault"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgPlural"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["NgPluralCase"], _app_component__WEBPACK_IMPORTED_MODULE_2__["AppComponent"],
-    _comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_3__["AllItemsComponent"],
-    _comp_all_items_item_item_component__WEBPACK_IMPORTED_MODULE_4__["ItemComponent"],
-    _comp_all_items_details_details_component__WEBPACK_IMPORTED_MODULE_5__["DetailsComponent"],
-    _comp_all_items_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_6__["AddItemComponent"]], [_angular_common__WEBPACK_IMPORTED_MODULE_7__["AsyncPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["UpperCasePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["LowerCasePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["JsonPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["SlicePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["DecimalPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["PercentPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["TitleCasePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["CurrencyPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["DatePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["I18nPluralPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["I18nSelectPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_7__["KeyValuePipe"]]);
+_angular_core__WEBPACK_IMPORTED_MODULE_1__["ɵɵsetComponentScope"](_comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_4__["AllItemsComponent"], [_angular_common__WEBPACK_IMPORTED_MODULE_8__["NgClass"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgComponentOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgForOf"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgIf"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgTemplateOutlet"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgStyle"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgSwitch"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgSwitchCase"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgSwitchDefault"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgPlural"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["NgPluralCase"], _app_component__WEBPACK_IMPORTED_MODULE_3__["AppComponent"],
+    _comp_all_items_all_items_component__WEBPACK_IMPORTED_MODULE_4__["AllItemsComponent"],
+    _comp_all_items_item_item_component__WEBPACK_IMPORTED_MODULE_5__["ItemComponent"],
+    _comp_all_items_details_details_component__WEBPACK_IMPORTED_MODULE_6__["DetailsComponent"],
+    _comp_all_items_add_item_add_item_component__WEBPACK_IMPORTED_MODULE_7__["AddItemComponent"]], [_angular_common__WEBPACK_IMPORTED_MODULE_8__["AsyncPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["UpperCasePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["LowerCasePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["JsonPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["SlicePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["DecimalPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["PercentPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["TitleCasePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["CurrencyPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["DatePipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["I18nPluralPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["I18nSelectPipe"], _angular_common__WEBPACK_IMPORTED_MODULE_8__["KeyValuePipe"]]);
 
 
 /***/ }),
@@ -135,16 +140,20 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AddItemComponent", function() { return AddItemComponent; });
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
 /* harmony import */ var _all_items_component__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../all-items.component */ "./src/app/comp/all-items/all-items.component.ts");
+/* harmony import */ var src_app_servies_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! src/app/servies.service */ "./src/app/servies.service.ts");
+
 
 
 
 const _c0 = ["winForm"];
 const _c1 = ["add"];
 class AddItemComponent {
-    constructor() {
+    constructor(http) {
+        this.http = http;
         this.personAdd = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
     }
     ngOnInit() {
+        this.http.post();
     }
     addPerson() {
         this.add.nativeElement.style.display = 'none';
@@ -169,7 +178,7 @@ class AddItemComponent {
         id.value = '';
     }
 }
-AddItemComponent.ɵfac = function AddItemComponent_Factory(t) { return new (t || AddItemComponent)(); };
+AddItemComponent.ɵfac = function AddItemComponent_Factory(t) { return new (t || AddItemComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](src_app_servies_service__WEBPACK_IMPORTED_MODULE_2__["ServiesService"])); };
 AddItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: AddItemComponent, selectors: [["app-add-item"]], viewQuery: function AddItemComponent_Query(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c0, true);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵviewQuery"](_c1, true);
@@ -221,7 +230,7 @@ AddItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineC
                 templateUrl: './add-item.component.html',
                 styleUrls: ['./add-item.component.css']
             }]
-    }], function () { return []; }, { winForm: [{
+    }], function () { return [{ type: src_app_servies_service__WEBPACK_IMPORTED_MODULE_2__["ServiesService"] }]; }, { winForm: [{
             type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["ViewChild"],
             args: ['winForm']
         }], add: [{
@@ -472,6 +481,44 @@ ItemComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComp
 
 /***/ }),
 
+/***/ "./src/app/servies.service.ts":
+/*!************************************!*\
+  !*** ./src/app/servies.service.ts ***!
+  \************************************/
+/*! exports provided: ServiesService */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "ServiesService", function() { return ServiesService; });
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/__ivy_ngcc__/fesm2015/core.js");
+/* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
+
+
+
+class ServiesService {
+    constructor(http) {
+        this.http = http;
+    }
+    post() {
+        this.http.post("yakovTesting.com", { "yakov": "test" }).subscribe((data) => {
+            console.log(data);
+        });
+        this.http.post("ynet.com", { "yakov": "test" }).subscribe((data) => { console.log(data); });
+    }
+}
+ServiesService.ɵfac = function ServiesService_Factory(t) { return new (t || ServiesService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
+ServiesService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ServiesService, factory: ServiesService.ɵfac, providedIn: 'root' });
+/*@__PURE__*/ (function () { _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵsetClassMetadata"](ServiesService, [{
+        type: _angular_core__WEBPACK_IMPORTED_MODULE_0__["Injectable"],
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: _angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"] }]; }, null); })();
+
+
+/***/ }),
+
 /***/ "./src/environments/environment.ts":
 /*!*****************************************!*\
   !*** ./src/environments/environment.ts ***!
@@ -533,7 +580,7 @@ _angular_platform_browser__WEBPACK_IMPORTED_MODULE_3__["platformBrowser"]().boot
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-module.exports = __webpack_require__(/*! C:\angular\inputAndOutput\src\main.ts */"./src/main.ts");
+module.exports = __webpack_require__(/*! C:\Users\YakovMendelson\Desktop\inputAndOutput\src\main.ts */"./src/main.ts");
 
 
 /***/ })
