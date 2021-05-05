@@ -16,7 +16,7 @@ export class AddItemComponent implements OnInit {
   constructor(private  http:ServiesService) { }
 
   ngOnInit(): void {
-    this.http.post()
+    // this.http.post()
   }
   addPerson(){
   this.add.nativeElement.style.display='none'

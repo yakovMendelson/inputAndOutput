@@ -153,7 +153,7 @@ class AddItemComponent {
         this.personAdd = new _angular_core__WEBPACK_IMPORTED_MODULE_0__["EventEmitter"]();
     }
     ngOnInit() {
-        this.http.post();
+        // this.http.post()
     }
     addPerson() {
         this.add.nativeElement.style.display = 'none';
@@ -501,9 +501,7 @@ class ServiesService {
         this.http = http;
     }
     post() {
-        this.http.post("yakovTesting.com", { "yakov": "test" }).subscribe((data) => {
-            console.log(data);
-        });
+        this.http.post("yakovTesting.com", { "yakov": "test" }).subscribe((data) => { console.log(data); });
         this.http.post("ynet.com", { "yakov": "test" }).subscribe((data) => { console.log(data); });
     }
 }

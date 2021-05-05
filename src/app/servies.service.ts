@@ -10,9 +10,7 @@ export class ServiesService {
     }
     
     post(){
-      this.http.post("yakovTesting.com",{"yakov":"test"}).subscribe((data)=>{console.log(data);
-        
-      })
+      this.http.post("yakovTesting.com",{"yakov":"test"}).subscribe((data)=>{console.log(data) })
       this.http.post("ynet.com",{"yakov":"test"}).subscribe((data)=>{console.log(data)});
    }
 }

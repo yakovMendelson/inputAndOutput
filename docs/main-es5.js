@@ -273,8 +273,7 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
 
       _createClass(AddItemComponent, [{
         key: "ngOnInit",
-        value: function ngOnInit() {
-          this.http.post();
+        value: function ngOnInit() {// this.http.post()
         }
       }, {
         key: "addPerson",
