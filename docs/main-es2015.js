@@ -500,10 +500,6 @@ class ServiesService {
     constructor(http) {
         this.http = http;
     }
-    post() {
-        this.http.post("yakovTesting.com", { "yakov": "test" }).subscribe((data) => { console.log(data); });
-        this.http.post("ynet.com", { "yakov": "test" }).subscribe((data) => { console.log(data); });
-    }
 }
 ServiesService.ɵfac = function ServiesService_Factory(t) { return new (t || ServiesService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"])); };
 ServiesService.ɵprov = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineInjectable"]({ token: ServiesService, factory: ServiesService.ɵfac, providedIn: 'root' });

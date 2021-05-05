@@ -1047,31 +1047,11 @@ function _classCallCheck(instance, Constructor) { if (!(instance instanceof Cons
     /*! @angular/common/http */
     "./node_modules/@angular/common/__ivy_ngcc__/fesm2015/http.js");
 
-    var ServiesService = /*#__PURE__*/function () {
-      function ServiesService(http) {
-        _classCallCheck(this, ServiesService);
+    var ServiesService = function ServiesService(http) {
+      _classCallCheck(this, ServiesService);
 
-        this.http = http;
-      }
-
-      _createClass(ServiesService, [{
-        key: "post",
-        value: function post() {
-          this.http.post("yakovTesting.com", {
-            "yakov": "test"
-          }).subscribe(function (data) {
-            console.log(data);
-          });
-          this.http.post("ynet.com", {
-            "yakov": "test"
-          }).subscribe(function (data) {
-            console.log(data);
-          });
-        }
-      }]);
-
-      return ServiesService;
-    }();
+      this.http = http;
+    };
 
     ServiesService.ɵfac = function ServiesService_Factory(t) {
       return new (t || ServiesService)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵinject"](_angular_common_http__WEBPACK_IMPORTED_MODULE_1__["HttpClient"]));
